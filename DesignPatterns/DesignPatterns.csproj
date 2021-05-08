@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Factory\NewFolder\**" />
+    <Compile Remove="Singleton\NewFolder\**" />
+    <EmbeddedResource Remove="Factory\NewFolder\**" />
+    <EmbeddedResource Remove="Singleton\NewFolder\**" />
+    <None Remove="Factory\NewFolder\**" />
+    <None Remove="Singleton\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+</Project>
